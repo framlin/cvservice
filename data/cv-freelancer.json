@@ -1,0 +1,159 @@
+[
+    {
+        "job": {
+            "jobid" : "fr-2006",
+            "position": "",
+            "firma": "Soprado GmbH & Co KG, München",
+            "time": "seit 2006",
+            "description": "software identity",
+            "tasks": [
+                {
+                    "name": "XUL-UnitTest-Adapter",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, NodeJS, Mocha, bash"
+                },
+                {
+                    "name": "Performance Monitor",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, NodeJS"
+                },
+                {
+                    "name": "Frontend Fuhrparkmanagemant +++ Backoffice WebApplication",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, XUL, AJAX, JSON, PHP"
+                },
+                {
+                    "name": "Frontend Nutzfahrzeugeverwaltung +++ Backoffice WebApplication",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, XUL, AJAX, JSON, PHP"
+                },
+                {
+                    "name": "ExtJS Migration Prototype",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, ExtJS, JSON"
+                },
+                {
+                    "name": "Frontend Bonitätsprüfung +++ Backoffice WebApplication",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, XUL, AJAX, JSON, PHP"
+                },
+                {
+                    "name": "Frontend Kundenprofil +++ Backoffice WebApplication",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, XUL, AJAX, JSON, PHP"
+                },
+                {
+                    "name": "Frontend Endabrechnung +++ Backoffice WebApplication",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, XUL, AJAX, JSON, PHP"
+                },
+                {
+                    "name": "XUJI +++ Deploytool",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "SED, AWK, bash, CVS, JIRA"
+                },
+                {
+                    "name": "Frontend Vertragsverwaltung +++ Backoffice WebApplication",
+                    "customer": "Sixt Leasing AG",
+                    "skills": "JavaScript, XUL, AJAX, JSON"
+                }
+            ]
+        }
+    },
+    {
+        "job": {
+            "jobid" : "fr-2005",
+            "position": "",
+            "firma": "Hoch3 GmbH, Berlin",
+            "time": "2005",
+            "description": "Healthcare-Kommunikation",
+            "tasks": [
+                {
+                    "name": "BWP 2005 (Upgrade) +++ barrierefreie PDF-Archiv-CD mit Volltextsuche",
+                    "customer": "BIBB",
+                    "skills": "J2EE, JSP, XML, XSLT, XSL-FO"
+                },
+                {
+                    "name": "Dardia International",
+                    "customer": "Schering AG",
+                    "skills": "PHP, Perl, CMS (Teamsite)"
+                }
+            ]
+        }
+    },
+    {
+        "job": {
+            "jobid" : "fr-2001",
+            "position": "",
+            "firma": "WR-Multimedia, Nürnberg",
+            "time": "seit 2001",
+            "description": "Web Development",
+            "tasks": [
+                {
+                    "name": "MS SpaceSellers",
+                    "customer": "Microsoft Deutschland GmbH",
+                    "skills": "C#, .NET, ActionScript, XML"
+                },
+                {
+                    "name": "Pille.com",
+                    "customer": "Schering AG",
+                    "skills": "PHP, Perl, CMS (Teamsite)"
+                },
+                {
+                    "name": "Ventavis International",
+                    "customer": "Schering AG",
+                    "skills": "PHP"
+                },
+                {
+                    "name": "AZA - Redirector",
+                    "customer": "Schering AG",
+                    "skills": "PHP"
+                },
+                {
+                    "name": "BWP 2007 (Update)",
+                    "customer": "BIBB",
+                    "skills": "J2EE, JSP, XML, XSLT, XSL-FO"
+                },
+                {
+                    "name": "BWP 2006 (Update)",
+                    "customer": "BIBB",
+                    "skills": "J2EE, JSP, XML, XSLT, XSL-FO"
+                },
+                {
+                    "name": "BWP 2004 (Update)",
+                    "customer": "BIBB",
+                    "skills": "XML, XSLT, XSL-FO, ActionScript"
+                },
+                {
+                    "name": "BWP 2003 +++ PDF-Archiv-CD mit Volltextsuche",
+                    "customer": "BIBB",
+                    "skills": "XML, XSLT, XSL-FO, ActionScript"
+                },
+                {
+                    "name": "IT Consulting",
+                    "customer": "BIBB",
+                    "skills": ""
+                }
+            ]
+        }
+    },
+    {
+        "job": {
+            "jobid" : "fr-1998",
+            "position": "",
+            "firma": "Institut der Kasseler Stottertherapie, Kassel",
+            "time": "1998 bis 2000",
+            "description": "Multidimensionale Stottertherapie",
+            "tasks": [
+                {
+                    "name": "IT Consulting",
+                    "customer": "Kasseler Stottertherapie",
+                    "skills": ""
+                }
+            ]
+        }
+    }
+]
+
+
+

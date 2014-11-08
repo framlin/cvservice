@@ -1,0 +1,8 @@
+{
+  "name": "cvservice",
+  "version": "0.0.1",
+  "dependencies": {
+    "node-json2html": "^1.0.0",
+    "restify": "^2.8.3"
+  }
+}
