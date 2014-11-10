@@ -7,7 +7,7 @@ var json2html = require('node-json2html'),
     listHeadingHTML = "<section><header><h1>curriculum vitae</h1></header></section>",
     listPrefixHTML = '<nav id=\"breadcrumb\"><ul><li><a href=\"/\">Startseite</a></li></ul></nav><article id=\"cv\">',
     elemPrefixHTML = '<nav id=\"breadcrumb\"><ul><li><a href=\"/\">Startseite</a>&nbsp;&nbsp;&gt;</li><li><a href=\"/cv\">Lebenslauf</a></li></ul></nav><article id=\"cv\">',
-    postfix = "</article>"
+    postfix = "</article>",
     services = {
         mb: mbaabaService,
         ed: educationService,
