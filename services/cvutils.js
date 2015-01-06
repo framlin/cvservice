@@ -90,7 +90,8 @@ function getHTMLElem(JSONElem) {
     var transform = {
             'tag':'li',
             'html':'${name}<br><span class=\"skills\">${skills}</span>',
-            'class' : 'cv-project'},
+            'class' : 'cv-project'
+        },
         resultHTML = "",
         headingHTML = "<section class=\"cv-entry\"><header><h1>"+
             JSONElem.firma+"</h1><p>"+
