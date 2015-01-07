@@ -1,5 +1,5 @@
-var json2html = require('node-json2html'),
-    restify = require('restify'),
+var restify = require('restify'),
+    ServerPort = require('fr-infra').ServerConfig.cvservice.port,
     educationService = require('./../services/education'),
     employmentService = require('./../services/employment'),
     freelancerService = require('./../services/freelancer'),
@@ -66,11 +66,12 @@ function cv_elem(req, res, next) {
 }
 
 var server = restify.createServer();
+
 server.use(restify.CORS( {credentials: true, headers: ['x-framlin-cv']}));
 server.use(restify.fullResponse());
 server.get('/cv/list', cv_list);
 server.get('/cv/:cvid', cv_elem);
 
-server.listen(8089, function() {
+server.listen(ServerPort, function() {
     //console.log('%s listening at %s', server.name, server.url);
 });
