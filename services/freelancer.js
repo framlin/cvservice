@@ -17,7 +17,7 @@ function Freelancer() {
                 JSONElem.firma+"</h1><p>"+
                 JSONElem.description+
                 "</p></header><ul>",
-            postfixHTML = "</p></ul></section>";
+            postfixHTML = "</ul></section>";
 
         resultHTML = headingHTML + json2html.transform(JSONElem.tasks,transform) + postfixHTML;
 
