@@ -67,11 +67,12 @@ function cv_elem(req, res, next) {
 
 var server = restify.createServer();
 
-server.use(restify.CORS( {credentials: true, headers: ['x-framlin-cv']}));
-server.use(restify.fullResponse());
+// server.use(restify.CORS( {credentials: true, headers: ['x-framlin-cv']}));
+// server.use(restify.fullResponse());
+
 server.get('/cv/list', cv_list);
 server.get('/cv/:cvid', cv_elem);
 
 server.listen(ServerPort, function() {
-    //console.log('%s listening at %s', server.name, server.url);
+    console.log('%s listening at %s', server.name, server.url);
 });
