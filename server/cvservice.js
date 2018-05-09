@@ -67,8 +67,8 @@ function cv_elem(req, res, next) {
 
 var server = restify.createServer();
 
-// server.use(restify.CORS( {credentials: true, headers: ['x-framlin-cv']}));
-// server.use(restify.fullResponse());
+server.use(restify.CORS( {credentials: true, headers: ['x-framlin-cv']}));
+server.use(restify.fullResponse());
 
 server.get('/cv/list', cv_list);
 server.get('/cv/:cvid', cv_elem);

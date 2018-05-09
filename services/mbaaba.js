@@ -9,7 +9,7 @@ function Mbaaba() {
         var result = cvUtils.getJSONList(cvMbaaba);
         switch (type) {
             case 'HTML':
-                result = cvUtils.getHTMLList(result, "Walden &amp; Egger GbR");
+                result = cvUtils.getHTMLList(result, "Walden &amp; Egger GbR", "cv_mbaaba");
                 break;
         }
         return result;
@@ -19,11 +19,22 @@ function Mbaaba() {
         var result = cvUtils.getJSONElem(jobs[cvid]);
         switch (type) {
             case 'HTML':
-                result = cvUtils.getHTMLElem(result);
+                result = cvUtils.getHTMLElem(result, "cv_mbaaba");
                 break;
         }
         return result;
     };
+
+    this.getCVIDs = function getCVIDs() {
+        var result = [],
+            job;
+
+        for (job in jobs) {
+            result.push(job);
+
+        }
+        return result;
+    }
 
 }
 

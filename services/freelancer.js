@@ -28,7 +28,7 @@ function Freelancer() {
         var result = cvUtils.getJSONList(cvFreelancer);
         switch (type) {
             case 'HTML':
-                result = cvUtils.getHTMLList(result, "Freelancer");
+                result = cvUtils.getHTMLList(result, "Freelancer", "cv_freelancer");
                 break;
         }
         return result;
@@ -38,11 +38,23 @@ function Freelancer() {
         var result = cvUtils.getJSONElem(jobs[cvid]);
         switch (type) {
             case 'HTML':
-                result = getHTMLElem(result);
+                result = getHTMLElem(result, "cv_freelancer");
                 break;
         }
         return result;
     };
+
+    this.getCVIDs = function getCVIDs() {
+        var result = [],
+            job;
+
+        for (job in jobs) {
+            result.push(job);
+
+        }
+        return result;
+    }
+
 }
 
 module.exports = new Freelancer();

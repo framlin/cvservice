@@ -67,7 +67,7 @@ function Education() {
         var result = getJSONList();
         switch (type) {
             case 'HTML':
-                result = cvUtils.getHTMLList(result, "Ausbildung");
+                result = cvUtils.getHTMLList(result, "Ausbildung", "cv_education");
                 break;
         }
         return result;

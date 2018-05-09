@@ -9,7 +9,7 @@ function Employment() {
         var result = cvUtils.getJSONList(cvEmployment);
         switch (type) {
             case 'HTML':
-                result = cvUtils.getHTMLList(result, "Anstellungen");
+                result = cvUtils.getHTMLList(result, "Anstellungen", "cv_employment");
                 break;
         }
         return result;
@@ -19,11 +19,23 @@ function Employment() {
         var result = cvUtils.getJSONElem(jobs[cvid]);
         switch (type) {
             case 'HTML':
-                result = cvUtils.getHTMLElem(result);
+                result = cvUtils.getHTMLElem(result, "cv_employment");
                 break;
         }
         return result;
     };
+
+    this.getCVIDs = function getCVIDs() {
+        var result = [],
+            job;
+
+        for (job in jobs) {
+            result.push(job);
+
+        }
+        return result;
+    }
+
 }
 
 module.exports = new Employment();

@@ -73,31 +73,35 @@ function createJobIndex(cvlist) {
     return result;
 }
 
-function getHTMLList(JSONList, headline) {
+function getHTMLList(JSONList, headline, id) {
 
-    var transform = {'tag':'li','html':'${period}: ${topic} <br><span class=\"skills\" >${skills}</span>', 'class' : 'cv-summary'},
+
+
+
+
+    var transform = {'tag':'li','html':'${period}: ${topic} <br><div class=\"skills\" >${skills}</div>', 'class' : 'cv-summary'},
         resultHTML = "",
-        headingHTML = "<section class=\"cv-kind\"><header><h1>"+headline+"</h1></header><ul>",
-        postfixHTML = "</ul></section>";
+        headingHTML = "<div  class=\"overlay\" ><div id=\"" + id + "\"><article><section class=\"cv-kind\"><header><h1>"+headline+"</h1></header><ul>",
+        postfixHTML = "</ul></section></article></div></div>";
 
     resultHTML = headingHTML + json2html.transform(JSONList,transform) + postfixHTML;
 
     return resultHTML;
 }
 
-function getHTMLElem(JSONElem) {
+function getHTMLElem(JSONElem, id) {
 
     var transform = {
             'tag':'li',
-            'html':'${name}<br><span class=\"skills\">${skills}</span>',
+            'html':'${name}<br><div class=\"skills\">${skills}</div>',
             'class' : 'cv-project'
         },
         resultHTML = "",
-        headingHTML = "<section class=\"cv-entry\"><header><h1>"+
+        headingHTML = "<div  class=\"overlay\" ><div id=\"" + id + "\"><article><section class=\"cv-entry\"><header><h1>"+
             JSONElem.firma+"</h1><p>"+
             JSONElem.description+
             "</p></header><ul>",
-        postfixHTML = "</ul></section>";
+        postfixHTML = "</ul></section></article></div></div>";
 
     resultHTML = headingHTML + json2html.transform(JSONElem.tasks,transform) + postfixHTML;
 
