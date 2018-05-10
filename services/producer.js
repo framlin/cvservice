@@ -38,7 +38,7 @@ function create_job_articles() {
         if (kind !== 'ed') {
             cvids = services[kind].getCVIDs();
             for (i=0; i < cvids.length; i++) {
-                filename = './../content/article/job_' + cvids[i] + '.html';
+                filename = './../content/article/' + cvids[i] + '.html';
                 fs.writeFile(filename, services[kind].getElem(cvids[i], 'HTML'), (err) => {
                     if (err) throw err;
                 });

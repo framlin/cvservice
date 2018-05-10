@@ -19,7 +19,7 @@ function Employment() {
         var result = cvUtils.getJSONElem(jobs[cvid]);
         switch (type) {
             case 'HTML':
-                result = cvUtils.getHTMLElem(result, "cv_employment");
+                result = cvUtils.getHTMLElem(result, "ov_cv");
                 break;
         }
         return result;

@@ -1,7 +1,7 @@
 function createTopic(elem) {
     var label = elem.firma,
         jobid = elem.jobid,
-        target = '/cv/' + jobid,
+        target = '/cv?ov_cv,' + jobid,
         topic = jobid ? '<a href=\"'+target+'\">'+label+'</a>' : label;
 
     return topic;
@@ -75,13 +75,10 @@ function createJobIndex(cvlist) {
 
 function getHTMLList(JSONList, headline, id) {
 
-
-
-
-
     var transform = {'tag':'li','html':'${period}: ${topic} <br><div class=\"skills\" >${skills}</div>', 'class' : 'cv-summary'},
         resultHTML = "",
-        headingHTML = "<div  class=\"overlay\" ><div id=\"" + id + "\"><article><section class=\"cv-kind\"><header><h1>"+headline+"</h1></header><ul>",
+        headingHTML = "<div  class=\"overlay\" ><div id=\"" + id + "\">" +
+            "<article><section class=\"cv-kind\"><header><h1>"+headline+"</h1></header><ul>",
         postfixHTML = "</ul></section></article></div></div>";
 
     resultHTML = headingHTML + json2html.transform(JSONList,transform) + postfixHTML;
@@ -97,7 +94,10 @@ function getHTMLElem(JSONElem, id) {
             'class' : 'cv-project'
         },
         resultHTML = "",
-        headingHTML = "<div  class=\"overlay\" ><div id=\"" + id + "\"><article><section class=\"cv-entry\"><header><h1>"+
+        headingHTML = "<div  class=\"overlay\" ><div id=\"" + id + "\">" +
+            "<section class=\"topic\"><header><h1>curriculum vitae</h1></header></section>" +
+            "<nav id=\"breadcrumb\"><ul><li><a href='/'>Startseite</a></li> &gt; <li><a href='/cv?ov_cv,all'>Lebenslauf</a></li></ul></nav>" +
+            "<article><section class=\"cv-entry\"><header><h1>"+
             JSONElem.firma+"</h1><p>"+
             JSONElem.description+
             "</p></header><ul>",
